@@ -28,9 +28,10 @@ build/
 dist/
 *.egg-info/
 
-# Local data caches
-data/
-*.csv
+# Local data caches  (but keep public starter datasets)
+data/*
+!data/churn_starter.csv
+!data/churn_brief.md
 *.parquet
 *.feather
 

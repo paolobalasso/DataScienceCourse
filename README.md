@@ -71,3 +71,17 @@ If you use any of this material in your teaching, please cite as:
 Balasso, P. (2026). Data Science Master Class — Università Cattolica del Sacro Cuore, Milano.
 https://github.com/paolobalasso/DataScienceCourse
 ```
+
+
+## Starter dataset for the churn fallback exercise
+
+For students who prefer to develop the analysis themselves before reading `01_churn_cost_threshold.ipynb`, the repo ships a starter CSV and a one-page brief:
+
+- [`data/churn_starter.csv`](data/churn_starter.csv) — 5,000-row synthetic Telco-style dataset.
+- [`data/churn_brief.md`](data/churn_brief.md) — challenge brief, deliverables, hints.
+
+## Notebook 05 — Conjoint → Demand → Revenue
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/paolobalasso/DataScienceCourse/blob/main/notebooks/05_conjoint_demand_revenue.ipynb) [`notebooks/05_conjoint_demand_revenue.ipynb`](notebooks/05_conjoint_demand_revenue.ipynb)
+
+End-to-end pricing pipeline: choice-based conjoint design → simulated respondents → MNL part-worth estimation → attribute importance & willingness-to-pay → market simulator → potential demand → revenue curve → bootstrap sensitivity.
