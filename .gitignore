@@ -28,15 +28,20 @@ build/
 dist/
 *.egg-info/
 
-# Local data caches  (but keep public starter datasets)
+# Local data caches  (but keep public starter datasets + pricing exercise files)
 data/*
 !data/churn_starter.csv
 !data/churn_brief.md
+!data/retail_pricing_exercise.csv
+!data/pricing_brief.md
+!data/pricing_rubric.md
+!data/pricing_presentation_template.pptx
 *.parquet
 *.feather
 
 # Internal course artefacts (NOT for public repo)
 v7_audit/
-*.pptx
-*.docx
-*.pdf
+/*.pptx
+/*.docx
+/*.pdf
+# (root-level only; data/*.pptx allow-listed above is preserved)
