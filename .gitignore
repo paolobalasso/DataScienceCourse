@@ -34,7 +34,6 @@ data/*
 !data/churn_brief.md
 !data/retail_pricing_exercise.csv
 !data/pricing_brief.md
-!data/pricing_rubric.md
 !data/pricing_presentation_template.pptx
 *.parquet
 *.feather

@@ -67,5 +67,4 @@ We are looking for a **clean, defensible, decision-grade analysis** you would no
 ## Resources
 
 - Notebook 06 starter: `notebooks/06_pricing_starter.ipynb` (blank canvas — start here).
-- Lecture slides: Main FIX8 slides 48-54 (model selection), slides 67-70 (price elasticity, log-log).
-- KB Book Chapter 12 (Pricing).
+- Slides Material.
