@@ -44,3 +44,6 @@ v7_audit/
 /*.docx
 /*.pdf
 # (root-level only; data/*.pptx allow-listed above is preserved)
+
+# Hidden from public repo for now (decision pending)
+COURSE_INDEX.md
