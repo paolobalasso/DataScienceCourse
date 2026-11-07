@@ -1,0 +1,43 @@
+# Allow-list: everything is ignored except the files listed below.
+# To publish a new file, add an explicit "!" line for it.
+# Git never re-includes a file whose parent folder is ignored, so each public
+# folder is un-ignored first, its content is ignored again, and then single
+# files are re-included. The last matching rule wins.
+
+# 1) Ignore everything at the repository root (files and folders)
+/*
+
+# 2) Public root files
+!/.gitignore
+!/.gitattributes
+!/LICENSE
+!/README.md
+!/requirements.txt
+
+# 3) Public notebooks: explicit list, one line per file
+!/notebooks/
+/notebooks/*
+!/notebooks/01_churn_cost_threshold.ipynb
+!/notebooks/02_demand_eda_single_product.ipynb
+!/notebooks/03_demand_eda_multi_product.ipynb
+!/notebooks/04_portfolio_optimization.ipynb
+!/notebooks/05_conjoint_demand_revenue.ipynb
+!/notebooks/06_pricing_starter.ipynb
+
+# 4) Public data files: explicit list, one line per file
+!/data/
+/data/*
+!/data/churn_brief.md
+!/data/churn_starter.csv
+!/data/pricing_brief.md
+!/data/pricing_presentation_template.pptx
+!/data/retail_pricing_exercise.csv
+
+# 5) Editor and OS clutter
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
