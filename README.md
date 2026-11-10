@@ -22,19 +22,23 @@ On Colab there is nothing else to set up: everything the notebooks need is alrea
 | # | Notebook | Topic | Data | Open in Colab |
 |---|----------|-------|------|---------------|
 | 01 | [`01_churn_cost_threshold.ipynb`](notebooks/01_churn_cost_threshold.ipynb) | Churn — beyond the 0.5 threshold | synthetic, generated in the notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/paolobalasso/DataScienceCourse/blob/main/notebooks/01_churn_cost_threshold.ipynb) |
+| 01b | [`01b_churn_walkthrough.ipynb`](notebooks/01b_churn_walkthrough.ipynb) | Churn walkthrough — the class dataset shown in Module 6 | [`data/churn_student_v2.csv`](data/churn_student_v2.csv) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/paolobalasso/DataScienceCourse/blob/main/notebooks/01b_churn_walkthrough.ipynb) |
 | 02 | [`02_demand_eda_single_product.ipynb`](notebooks/02_demand_eda_single_product.ipynb) | Demand EDA — single product | synthetic, generated in the notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/paolobalasso/DataScienceCourse/blob/main/notebooks/02_demand_eda_single_product.ipynb) |
 | 03 | [`03_demand_eda_multi_product.ipynb`](notebooks/03_demand_eda_multi_product.ipynb) | Demand EDA — multi-product hierarchy | synthetic, generated in the notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/paolobalasso/DataScienceCourse/blob/main/notebooks/03_demand_eda_multi_product.ipynb) |
 | 04 | [`04_portfolio_optimization.ipynb`](notebooks/04_portfolio_optimization.ipynb) | Portfolio optimisation and macro regimes | public market and macro data, downloaded at run time; automatic synthetic fallback if the download fails | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/paolobalasso/DataScienceCourse/blob/main/notebooks/04_portfolio_optimization.ipynb) |
 | 05 | [`05_conjoint_demand_revenue.ipynb`](notebooks/05_conjoint_demand_revenue.ipynb) | Conjoint analysis → demand → revenue | synthetic, generated in the notebook | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/paolobalasso/DataScienceCourse/blob/main/notebooks/05_conjoint_demand_revenue.ipynb) |
 | 06 | [`06_pricing_starter.ipynb`](notebooks/06_pricing_starter.ipynb) | Pricing group exercise — starter canvas | [`data/retail_pricing_exercise.csv`](data/retail_pricing_exercise.csv) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/paolobalasso/DataScienceCourse/blob/main/notebooks/06_pricing_starter.ipynb) |
 
-Notebooks 01, 02, 03 and 05 generate their own data and run end-to-end in under a minute on a laptop; allow about a minute on a free Colab CPU.
+Notebooks 01, 02, 03 and 05 generate their own data and run end-to-end in under a minute on a laptop; allow about a minute on a free Colab CPU. Notebook 01b reads the class dataset `data/churn_student_v2.csv` from GitHub (or the local copy in `data/`) and runs in a few seconds.
 Notebook 04 downloads market and macro data from two public services. If a download fails, it switches automatically to clearly labelled synthetic data and says so in a banner: the code still runs, but the numbers are then illustrative, not market facts.
 
 ## What each notebook covers
 
 **01 · Churn — beyond the 0.5 threshold.**
 ROC vs precision-recall curves under class imbalance, probability calibration, lift and gain charts, from probabilities to action tiers in euros, and the cost-based decision threshold chosen on a validation set.
+
+**01b · Churn walkthrough — the class dataset.**
+The walkthrough shown in class, step by step and with the same numbers: EDA, the engineered `tech_delta` feature, encoding and scaling, a logistic regression scored on a held-out 20%, the top coefficients (and why a region is a proxy, not a driver), then the cost-based threshold and its value in euros. Run it after the session; notebook 01 then goes further.
 
 **02 · Demand EDA — single product.**
 STL decomposition, stationarity, ACF/PACF, outlier handling, baseline forecasts (naive, seasonal naive, Holt-Winters), MAPE / WAPE / MASE, residual checks.
@@ -90,7 +94,7 @@ Notebook 06 reads the dataset from GitHub and falls back to the local copy in `d
 
 ```
 DataScienceCourse/
-├── notebooks/          six teaching notebooks (01-06)
+├── notebooks/          seven teaching notebooks (01, 01b, 02-06)
 ├── data/               datasets, exercise briefs, presentation template
 ├── requirements.txt    Python packages for local use
 ├── LICENSE             MIT

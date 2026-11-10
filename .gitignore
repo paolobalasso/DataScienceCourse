@@ -18,6 +18,7 @@
 !/notebooks/
 /notebooks/*
 !/notebooks/01_churn_cost_threshold.ipynb
+!/notebooks/01b_churn_walkthrough.ipynb
 !/notebooks/02_demand_eda_single_product.ipynb
 !/notebooks/03_demand_eda_multi_product.ipynb
 !/notebooks/04_portfolio_optimization.ipynb
@@ -29,6 +30,7 @@
 /data/*
 !/data/churn_brief.md
 !/data/churn_starter.csv
+!/data/churn_student_v2.csv
 !/data/pricing_brief.md
 !/data/pricing_presentation_template.pptx
 !/data/retail_pricing_exercise.csv
